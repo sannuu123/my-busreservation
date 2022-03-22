@@ -29,6 +29,7 @@ import { BookbusComponent } from './bookbus/bookbus.component';
 import { CanclebusComponent } from './canclebus/canclebus.component';
 import { DeletebusComponent } from './deletebus/deletebus.component';
 import { AddbusComponent } from './addbus/addbus.component';
+import { BusdetailsComponent } from './busdetails/busdetails.component';
 
 
 @NgModule({
@@ -56,7 +57,7 @@ import { AddbusComponent } from './addbus/addbus.component';
     BookbusComponent,//
     CanclebusComponent,//
     DeletebusComponent,//
-    AddbusComponent//
+    AddbusComponent, BusdetailsComponent//
   ],
   imports: [
     BrowserModule,

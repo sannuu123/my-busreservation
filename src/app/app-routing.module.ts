@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddbusComponent } from './addbus/addbus.component';
 import { BookbusComponent } from './bookbus/bookbus.component';
+import { BusdetailsComponent } from './busdetails/busdetails.component';
 import { BussearchComponent } from './bussearch/bussearch.component';
+import { BusseatsComponent } from './busseats/busseats.component';
 import { CanclebusComponent } from './canclebus/canclebus.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -28,7 +30,10 @@ const routes: Routes = [
   {path:'bookbus',component:BookbusComponent}, //processing
   {path:'cancelbus',component:CanclebusComponent},//processing
   {path:'deletebus',component:DeletebusComponent},//processing
-  {path:'addbus',component:AddbusComponent}//processing
+  {path:'addbus',component:AddbusComponent},//processing
+  //srinu
+  {path:'busdetails',component:BusdetailsComponent},//processing
+  {path:'busseats',component:BusseatsComponent}
 
 ];
 
