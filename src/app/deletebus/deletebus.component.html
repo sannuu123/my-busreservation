@@ -1,0 +1,12 @@
+<p>deletebus works!</p>
+<form #deleteForm="ngForm" (ngSubmit)="deletebus(deleteForm)">
+    <div><table>
+        <tr>
+            <td>busId</td><td> <input type="text" name="busId" ngModel> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Delete"></td>
+            </tr>
+        </table>
+    </div>
+</form>

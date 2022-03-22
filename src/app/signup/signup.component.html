@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+             <h2> Sign Up Here!</h2>
+             <p>Enter Details Below!</p>
+             <form  #signupform="ngForm" (ngSubmit)="savesignup(signupform)" required>
+                <input type="text" name="firstname" placeholder="First Name" ngModel required><br/>
+                <input type="text" name="lastname" placeholder="Last Name" ngModel required><br/>
+                <input type="email"name="email" placeholder="Enter Email Here" ngModel required><br/>
+                <input type="password" name="password" placeholder="Enter Password Here" ngModel  required><br/>
+                <input type="password" name="confirmpassword" placeholder="confirm password Here" ngModel  required><br/>
+                <input type="text" name="phonenumber" placeholder="Enter Number" ngModel  required><br/>
+                <input type="reset" value="RESET">
+                <input type="submit" value="SAVE">
+             </form>
+</body>
+</html>

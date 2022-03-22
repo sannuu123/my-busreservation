@@ -1,0 +1,18 @@
+<h2>Add Bus!..</h2>
+<form #addbusForm="ngForm" (ngSubmit)="addbus(addbusForm)">
+    <div><table align="center" border="1px solid black">
+        <tr>
+            <td><b> busId</b> </td><td> <input type="text" name="busId" ngModel> </td>
+        </tr>
+        <tr>
+            <td><b>fromTo</b></td><td> <input type="text" name="fromTo" ngModel> </td>
+        </tr>
+        <tr>
+            <td><b>toFrom</b></td><td> <input type="text" name="toFrom" ngModel> </td>
+        </tr>
+        <tr>
+            <td><b>driverId</b></td><td> <input type="text" name="driverId" ngModel> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="submit"></td>
+        </tr>

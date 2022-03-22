@@ -1,0 +1,11 @@
+<h2> Search Bus</h2>
+<p>bussearch works!</p>
+<form #searchForm="ngForm" (ngSubmit)="searchmethod(searchForm)"> 
+<table align="center" border="1px solid black" background-color="gray">
+<div >
+<tr><td><b> ToForm</b> </td><td><input type="text"   name ="srchfrom" ngModel></td></tr>
+<tr><td><b>Enter FromTo</b></td> <td><input type="text" name ="srchto" ngModel></td></tr>
+<tr><td><b>Enter DateOfJourney</b> </td><td><input type="type" name ="srchdoj" ngModel></td></tr> 
+<tr><button type="submit" value="SEARCH">Search</button></tr>
+</div></table>
+</form>
