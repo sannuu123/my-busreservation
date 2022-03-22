@@ -9,7 +9,8 @@ export class BusService {
 
   constructor(private myhttp:HttpClient) { }
 
-  restUrl:string="http://localhost:9091/rest/api";
+  // restUrl:string="http://localhost:9091/rest/api";
+  restUrl:string="http://localhost:9090/rest/api";
 
   getAllBus()
   {

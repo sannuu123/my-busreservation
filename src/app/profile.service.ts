@@ -10,7 +10,8 @@ export class ProfileService {
 
   constructor(private myhttp:HttpClient) { }
 
-  restUrl:string="http://localhost:9098/rest/api";
+ restUrl:string="http://localhost:9090/rest/api";
+  // restUrl:string="http://localhost:9098/rest/api";
 
   addProfile(pfe:Profile)
   {

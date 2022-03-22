@@ -9,7 +9,8 @@ export class BookService {
 
   constructor(private  myhttp:HttpClient) { }
   
-  restUrl:string="http://localhost:9095/rest/api";
+  // restUrl:string="http://localhost:9095/rest/api";
+  restUrl:string="http://localhost:9090/rest/api";
   getAllBook()
   {
     return this.myhttp.get(this.restUrl+"/customer")

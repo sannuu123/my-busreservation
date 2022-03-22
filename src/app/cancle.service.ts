@@ -8,7 +8,8 @@ import { Cancle } from './cancle';
 export class CancleService {
 
   constructor(private myhttp:HttpClient) { }
-  restUrl:string="http://localhost:9095/rest/api";
+  // restUrl:string="http://localhost:9095/rest/api";
+  restUrl:string="http://localhost:9090/rest/api";
 /*getAllCancle()
   {
     return this.myhttp.get(this.restUrl+"/customer")
