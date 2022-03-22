@@ -31,6 +31,7 @@ import { DeletebusComponent } from './deletebus/deletebus.component';
 import { AddbusComponent } from './addbus/addbus.component';
 import { BusdetailsComponent } from './busdetails/busdetails.component';
 import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
 
 @NgModule({
@@ -58,7 +59,7 @@ import { UpdateprofileComponent } from './updateprofile/updateprofile.component'
     BookbusComponent,//
     CanclebusComponent,//
     DeletebusComponent,//
-    AddbusComponent, BusdetailsComponent, UpdateprofileComponent//
+    AddbusComponent, BusdetailsComponent, UpdateprofileComponent, AdmindashboardComponent//
   ],
   imports: [
     BrowserModule,
