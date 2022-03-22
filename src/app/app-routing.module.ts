@@ -11,10 +11,13 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DeletebusComponent } from './deletebus/deletebus.component';
+import { FeedbacksComponent } from './feedbacks/feedbacks.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { LoginComponent } from './login/login.component';
+import { MyprofilesComponent } from './myprofiles/myprofiles.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SignupComponent } from './signup/signup.component';
+import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -33,7 +36,12 @@ const routes: Routes = [
   {path:'addbus',component:AddbusComponent},//processing
   //srinu
   {path:'busdetails',component:BusdetailsComponent},//processing
-  {path:'busseats',component:BusseatsComponent}
+  {path:'busseats',component:BusseatsComponent},//processing
+  //dhananjay
+  {path:'feedbacks',component:FeedbacksComponent},
+  {path:'myprofile',component:MyprofilesComponent},
+  {path:'updateprofile',component:UpdateprofileComponent}
+
 
 ];
 

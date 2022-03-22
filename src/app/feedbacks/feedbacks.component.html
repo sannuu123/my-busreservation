@@ -1,1 +1,32 @@
-<p>feedbacks works!</p>
+<h4>Customer Feedback</h4>
+<form #feedbackForm="ngForm" (ngSubmit)="saveFeedback(feedbackForm)">
+    <table>
+        <tr>
+            <td>Login ID</td><td> <input type="text" name="loginid" ngModel required> </td>
+        </tr>
+        <tr>
+            <td>Name</td><td> <input type="text" name="name" ngModel required> </td>
+        </tr>
+        
+        <tr>
+            <td>Feedback</td><td> <input type="radio" name="feedback" value="Excellent" ngModel required>
+                <label for="one">Excellent</label><br>
+                <input type="radio" name="feedback" value="Very Good" ngModel>
+                <label for="two">Very Good</label> <br>
+                <input type="radio" name="feedback" value="Good" ngModel>
+                <label for="two">Good</label> <br>
+                <input type="radio" name="feedback" value="Poor" ngModel>
+                <label for="two">Poor</label> <br>
+                <input type="radio" name="feedback" value="Bad" ngModel>
+                <label for="two">Bad</label> </td>
+        </tr>
+        <tr>
+            <td>Remarks</td><td> <input type="textarea" name="remarks" ngModel> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <button type="submit" [disabled]="!feedbackForm.valid">SUBMIT</button> </td>
+        </tr>
+    </table>
+</form>
+
