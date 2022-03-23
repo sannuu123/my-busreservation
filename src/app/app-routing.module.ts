@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddbusComponent } from './addbus/addbus.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { BookbusComponent } from './bookbus/bookbus.component';
 import { BusdetailsComponent } from './busdetails/busdetails.component';
 import { BussearchComponent } from './bussearch/bussearch.component';
@@ -28,6 +30,8 @@ const routes: Routes = [
   {path:'contactus',component:ContactUsComponent},
   {path:'aboutus',component:AboutUsComponent},
   {path:'privacypolicy',component:PrivacyPolicyComponent},
+  {path:'admindashboard',component:AdmindashboardComponent},
+  {path:'adminlogin',component:AdminloginComponent},
   // sahana's components
   {path:'bussearch',component:BussearchComponent},//processing
   {path:'bookbus',component:BookbusComponent}, //processing
@@ -38,7 +42,7 @@ const routes: Routes = [
   {path:'busdetails',component:BusdetailsComponent},//processing
   {path:'busseats',component:BusseatsComponent},//processing
   //dhananjay
-  {path:'feedbacks',component:FeedbacksComponent},
+  {path:'feedbacks',component:FeedbacksComponent}, 
   {path:'myprofile',component:MyprofilesComponent},
   {path:'updateprofile',component:UpdateprofileComponent}
 

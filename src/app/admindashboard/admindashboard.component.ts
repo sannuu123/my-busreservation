@@ -9,7 +9,10 @@ export class AdmindashboardComponent implements OnInit {
 
   constructor() { }
 
+  loginid:any;
+
   ngOnInit(): void {
+    this.loginid=localStorage.getItem("loginid");
   }
 
 }

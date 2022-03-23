@@ -21,4 +21,9 @@ export class BusreservationService {
     return this.myhttp.get(this.restUrl+"/validatelogin/"+logValues.loginid+"/"+logValues.passwd);
   }
 
+  adminvalidateLogin(logValues:any)
+  {
+    return this.myhttp.get(this.restUrl+"/adminvalidatelogin/"+logValues.loginid+"/"+logValues.passwd);
+  }
+  
 }
