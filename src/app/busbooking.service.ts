@@ -26,6 +26,9 @@ export class BusbookingService {
   addCustomer(book:any){
     return this.myhttp.get(this.restUrl+"/busdetails/")
   }
+  getBussearchDetails(fcity:string,tcity:string,date:string){
+    return this.myhttp.get(this.restUrl+"/busdetails/"+fcity+"/"+tcity+"/"+date)
+  }
   getBookingdetails(){
     return this.myhttp.get(this.bookUrl+"/abus")
   }
