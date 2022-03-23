@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Busreservation } from './busreservation';
+import { Contactus } from './contactus';
 
 @Injectable({
   providedIn: 'root'
@@ -25,5 +26,9 @@ export class BusreservationService {
   {
     return this.myhttp.get(this.restUrl+"/adminvalidatelogin/"+logValues.loginid+"/"+logValues.passwd);
   }
+
   
+  addcontactus(c:Contactus){
+    return this.myhttp.post(this.restUrl+"/contactus",c);
+  }
 }

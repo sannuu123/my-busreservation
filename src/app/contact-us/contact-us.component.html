@@ -1,12 +1,14 @@
 <h2>Contact US</h2>
+<p>Enter Details Below!</p>
 <br/>
 <div class="form">
-    <form name="contact-form">
-    Name: <input type="text" name="name" placeholder="Full Name" size="30"  value=""><br/>
-    Email: <input type="email" name="email" placeholder="Email" size="30"  value=""><br/>
-    Mobile: <input type="text" name="number" placeholder="Mobile Number"  ><br/>
-    Message: <textarea  name="email-message" placeholder="Your Message" ></textarea><br/>
-    <input type="button" class="btn btn-success" value="Send">
+    <form  #contactusform="ngForm" (ngSubmit)="savecontactus(contactusform)">
+    Name: <input type="text" name="fullname" placeholder="Full Name" ngModel required ><br/>
+    Email: <input type="email" name="emailid" placeholder="Email" ngModel required><br/>
+    Mobile: <input type="text" name="mobileno" placeholder="Mobile Number" ngModel required ><br/>
+    Message: <textarea  name="message" placeholder="Your Message" ngModel required></textarea><br/>
+    <input type="reset" value="RESET" class="btn btn-info">&nbsp;
+    <input type="submit" value="SEND" class="btn btn-success">
     </form>
 </div>
 
