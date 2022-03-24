@@ -18,6 +18,7 @@ export class DeleteService {
   
     deletebus(da:Delete)
     {
-  return this.myhttp.delete(this.restUrl+"/abus/"+da.busId);
+  return this.myhttp.get(this.restUrl+"/aabus/"+da.bid);
     }
   }
+  

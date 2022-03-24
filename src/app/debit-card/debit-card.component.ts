@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-upitransaction',
-  templateUrl: './upitransaction.component.html',
-  styleUrls: ['./upitransaction.component.css']
+  selector: 'app-debit-card',
+  templateUrl: './debit-card.component.html',
+  styleUrls: ['./debit-card.component.css']
 })
-export class UPITransactionComponent implements OnInit {
+export class DebitCardComponent implements OnInit {
 
   
   constructor( private _router: Router ) { }
- 
   onresrvationClick():void{
     this._router.navigate(['/reservation']);
 
@@ -21,4 +21,3 @@ export class UPITransactionComponent implements OnInit {
   }
 
 }
-

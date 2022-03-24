@@ -14,11 +14,12 @@ export class AddService {
   restUrl:string="http://localhost:9090/rest/api";
   getAllBook()
   {
-    return this.myhttp.get(this.restUrl+"/abus")
+    return this.myhttp.get(this.restUrl+"/aabus")
   }
 
   addCustomer(ad:Add)
   {
-return this.myhttp.post(this.restUrl+"/abus",ad);
+return this.myhttp.post(this.restUrl+"/aabus",ad);
+
   }
 }

@@ -20,7 +20,7 @@ import { BusseatsComponent } from './busseats/busseats.component';
 import { PaymentComponent } from './payment/payment.component';
 import { DebitcardComponent } from './debitcard/debitcard.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
-import { UpitransactionComponent } from './upitransaction/upitransaction.component';
+// import { UpitransactionComponent } from './upitransaction/upitransaction.component'; //upitransaction
 import { NetbankingComponent } from './netbanking/netbanking.component';
 import { PrintticketComponent } from './printticket/printticket.component';
 import { BussearchComponent } from './bussearch/bussearch.component';
@@ -33,6 +33,11 @@ import { BusdetailsComponent } from './busdetails/busdetails.component';
 import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { CancelbookingComponent } from './cancelbooking/cancelbooking.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
+import { DebitCardComponent } from './debit-card/debit-card.component';
+import { NetBankingComponent } from './net-banking/net-banking.component';
+import { ReservationComponent } from './reservation/reservation.component';
 
 
 @NgModule({
@@ -52,7 +57,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     PaymentComponent,//
     DebitcardComponent,//
     CreditcardComponent,//
-    UpitransactionComponent,//
+    // UpitransactionComponent,//
     NetbankingComponent,//
     PrintticketComponent,//
     BussearchComponent,//
@@ -60,7 +65,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     BookbusComponent,//
     CanclebusComponent,//
     DeletebusComponent,//
-    AddbusComponent, BusdetailsComponent, UpdateprofileComponent, AdmindashboardComponent, AdminloginComponent//
+    AddbusComponent, BusdetailsComponent, UpdateprofileComponent, AdmindashboardComponent, AdminloginComponent, CancelbookingComponent, CreditCardComponent, DebitCardComponent, NetBankingComponent, ReservationComponent//
   ],
   imports: [
     BrowserModule,

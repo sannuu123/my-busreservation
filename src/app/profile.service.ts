@@ -26,4 +26,10 @@ export class ProfileService {
   {
     return this.myhttp.post(this.restUrl+"/profile",upfe)
   }
+
+  //
+  findProfile(pid:string)
+  {
+    return this.myhttp.get(this.restUrl+"/profile/"+pid)
+  }
 }

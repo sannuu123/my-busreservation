@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-payment',
@@ -7,9 +9,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _router: Router  ) { }
+
+  onNetBankingClick():void{
+    this._router.navigate(['/netbanking']);
+
+  }
+
+ 
+  oncreditcardClick():void{
+    this._router.navigate(['/creditcard']);
+
+  }
+
+  ondebitcardClick():void{
+    this._router.navigate(['/debitcard']);
+
+  }
+  onupitransactionClick():void{
+    this._router.navigate(['/upitransaction']);
+
+    
+ 
+
+
+
+  }
 
   ngOnInit(): void {
   }
 
 }
+

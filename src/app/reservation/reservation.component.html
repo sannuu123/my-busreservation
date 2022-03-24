@@ -1,0 +1,50 @@
+<p>reservation works!</p>
+<html>
+    <body>
+        <table class="container">
+        <h1 style="text-align: center;" > Payment Completed Successful</h1>
+        <br>
+        <u>
+            
+        <h2 style="text-align: center;" > Reservation Table</h2></u> 
+            <table class="center">
+            <table class="center">
+                <th>EMAIL ID</th> <th>FIRSTNAME</th><th>LASTNAME</th><th><th>PHONE NUMBER</th>
+                <tr *ngFor="let sp of signup">
+                <td>{{ sp.email}}</td>
+                <td>{{ sp.fname}}</td>
+                <td>{{ sp.lname}}</td>
+                <td>{{sp.mobileno}}</td>
+            </table>
+            <br>
+            <br>
+            <br>
+        <table   class="center"> </table> 
+            <table class="center">
+               <th> BUS ID</th> <th> SEAT NUMBER</th><th>PNR NUMBER</th><th>CUSTOMER ID</th>
+                <tr *ngFor="let bt of booking">
+                <td>{{ bt.bid}}</td>
+                <td>{{ bt.seatno}}</td>
+                <td>{{ bt.PnrNo}}</td>
+                <td>{{bt.custId}}</td>
+                
+            </table>
+            <br>
+        <br>
+            
+            <table class="center" >
+                <th> SEAT NUMBER</th><th>BUS ID</th><th>SEAT STATUS</th>
+                 <tr *ngFor="let bs of busseats">
+                 <td>{{ bs.sno}}</td>
+                 <td>{{ bs.bid}}</td>
+                 <td>{{bs.sstatus}}</td>
+             </table>
+
+        <input type="button"   (click)="onprintticketClick()"  class="btn btn-success" value="Print ticket"><br>
+        <br>
+        <input type="button"   (click)="oncancelbooking()" value="Cancel Reservation">
+    </table>
+</table>
+    </body>
+
+</html>

@@ -1,1 +1,49 @@
 <p>printticket works!</p>
+
+<html>
+    <body>
+    <table class="container">
+    <h1 style="text-align: center;" >Ticket </h1>
+    <table class="center">
+        <table  class="table-success">
+        <th>EMAIL ID</th> <th>FIRSTNAME</th><th>LASTNAME</th><th><th>PHONE NUMBER</th>
+         <tr *ngFor="let sp of signup">
+         <td>{{ sp.email}}</td>
+         <td>{{ sp.fname}}</td>
+         <td>{{ sp.lname}}</td>
+         <td>{{sp.mobileno}}</td>
+     </table>
+    </table>
+<br>
+<br>
+    <table class="center">
+        <table  class="table-success">
+           <th> BUS ID</th> <th> SEAT NUMBER</th><th>PNR NUMBER</th><th>CUSTOMER ID</th>
+            <tr *ngFor="let bt of booking">
+            <td>{{ bt.bid}}</td>
+            <td>{{ bt.seatno}}</td>
+            <td>{{ bt.PnrNo}}</td>
+            <td>{{bt.custId}}</td>
+        </table>
+        </table>
+        <table class="center">
+            <table  class="table-success">
+               <th> BUS ID</th> <th> FROM CITY</th><th>TO CITY</th><th>DRIVER ID</th><th>Bus Name</th><th>DATE OF JOURNEY</th>
+                <tr *ngFor="let bd of busdetails">
+                <td>{{ bd.bid}}</td>
+                <td>{{ bd.fname}}</td>
+                <td>{{ bd.tcity}}</td>
+                <td>{{bd.did}}</td>
+                <td>{{bd.bname}}</td>
+                <td>{{ bd.djourn}}</td>
+            
+            </table>
+            </table>
+        <br>
+        <br>
+        <table>
+        </table>
+    </table>
+    </body>
+</html>
+

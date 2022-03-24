@@ -2,17 +2,34 @@
 <form #addbusForm="ngForm" (ngSubmit)="addbus(addbusForm)">
     <div><table align="center" border="1px solid black">
         <tr>
-            <td><b> busId</b> </td><td> <input type="text" name="busId" ngModel> </td>
+            <td><b> busId</b> </td><td> <input type="text" name="bid" ngModel> </td>
         </tr>
         <tr>
-            <td><b>fromTo</b></td><td> <input type="text" name="fromTo" ngModel> </td>
+            <td><b>fromTo</b></td><td> <input type="text" name=" fcity" ngModel> </td>
         </tr>
         <tr>
-            <td><b>toFrom</b></td><td> <input type="text" name="toFrom" ngModel> </td>
+            <td><b>toFrom</b></td><td> <input type="text" name="tcity" ngModel> </td>
         </tr>
         <tr>
-            <td><b>driverId</b></td><td> <input type="text" name="driverId" ngModel> </td>
+            <td><b>driverId</b></td><td> <input type="text" name=" did" ngModel> </td>
         </tr>
+
+        <tr>
+            <td><b>bus name</b></td><td> <input type="text" name="bname" ngModel> </td>
+        </tr>
+
+        <tr>
+            <td><b>no of seats</b></td><td> <input type="text" name="noseats" ngModel> </td>
+        </tr>
+
+        <tr>
+            <td><b>Date of Journey</b></td><td> <input type="text" name="djourn" ngModel> </td>
+        </tr>
+
+        <tr>
+            <td><b>ticket price</b></td><td> <input type="text" name="tprice" ngModel> </td>
+        </tr>
+
         <tr>
             <td><input type="submit" value="submit"></td>
         </tr>

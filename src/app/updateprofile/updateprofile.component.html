@@ -2,24 +2,31 @@
 <form #updateprofileForm="ngForm" (ngSubmit)="updateProfile(updateprofileForm)">
     <table>
         <tr>
-            <td>Profile ID</td><td> <input type="text" name="pid" ngModel required> </td>
+            <td>Profile ID</td><td> <input type="text" name="pid" [ngModel]="profile.pid"  readonly> </td>
         </tr>
         <tr>
-         <td>Mobile Number</td><td> <input type="text" name="mobile" ngModel minlength="10" maxlength="10"> </td>
+         <td>Mobile Number</td><td> <input type="text" name="mobile" [ngModel]="profile.mobile" minlength="10" maxlength="10"> </td>
+        </tr>
+        <tr>
+            <td>Name</td><td> <input type="text" name="name" [ngModel]="profile.name" readonly> </td>
+        </tr>
+        <tr>
+            <td>Date Of Birth</td><td> <input type="date" name="dob" [ngModel]="profile.dob" readonly></td>            
         </tr>
        
+      <tr>
+            <td>Gender</td><td> <input type="text" name="gender" [ngModel]="profile.gender" readonly>
+                </td>
+        </tr>
         <tr>
-            <td>Gender</td><td> <input type="radio" name="gender" value="male" ngModel>
-                <label for="male">Male</label>
-                <input type="radio" name="gender" value="female" ngModel>
-                <label for="female">Female</label> </td>
+            <td>Email</td><td> <input type="email" name="email" [ngModel]="profile.email" email> </td>
         </tr>
         
         <tr>
-            <td>Address</td><td> <input type="text area" name="address" ngModel> </td>
+            <td>Address</td><td> <input type="text area" name="address" [ngModel]="profile.address"> </td>
         </tr>
         <tr>
-           <td> </td>
+            <td><input type="reset"></td>
             <td><button type="submit" [disabled]="!updateprofileForm.valid">UPDATE</button></td>
         </tr>
     </table>

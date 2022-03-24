@@ -7,4 +7,7 @@ export class Busdetails {
         noseats:string|undefined;
         djourn:string|undefined;
         tprice:string|undefined;
+
+    
+
 }

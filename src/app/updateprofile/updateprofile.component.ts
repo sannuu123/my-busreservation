@@ -12,7 +12,17 @@ export class UpdateprofileComponent implements OnInit {
   constructor(private upd:ProfileService) { }
 
   ngOnInit(): void {
+    this.upd.findProfile('naveed@gmail.com').subscribe(
+      (data)=>{
+        console.log(data);
+        this.profile=data as Profile;
+        console.log(this.profile);
+      },
+      (error)=>
+      {console.log(error)}
+    )
   }
+
 
   profile:Profile=new Profile();
 

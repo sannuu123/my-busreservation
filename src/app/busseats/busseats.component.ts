@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { BusbookingService } from '../busbooking.service';
 import { Busdetails } from '../busdetails';
 import { Busseats } from '../busseats';
@@ -23,7 +23,7 @@ export class BusseatsComponent implements OnInit {
   public bookButton:boolean;
   tPrice: any;
   public finalBusSeats:any;
-  constructor(private bks:BusbookingService, private route:ActivatedRoute) { 
+  constructor(private bks:BusbookingService,private myrouter:Router) { 
     this.checkData=[];
     this.seatsSelected='';
     this.vehicleList=[];
@@ -90,5 +90,12 @@ export class BusseatsComponent implements OnInit {
     localStorage.setItem('SeatNo',(this.seatsSelected).toString());
     localStorage.setItem('TicketPrice',(this.tPrice).toString());
 
+    
+    this.myrouter.navigate(['/payment']);
   }
+  
+
+  
+  
+
 }

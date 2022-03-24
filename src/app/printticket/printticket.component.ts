@@ -1,4 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { PrintticketService } from '../printticket.service';
+
+
+
 
 @Component({
   selector: 'app-printticket',
@@ -7,9 +13,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrintticketComponent implements OnInit {
 
-  constructor() { }
+ 
+  booking:any;
+  signup:any;
+  busdetails:any;
+
+  constructor(private  service:PrintticketService) { }
 
   ngOnInit(): void {
+
+  
+    this.booking=this.service.getbooking().subscribe(data=>this.booking=data);
+
+    this.booking=this.service.getsignup().subscribe(data=>this.signup=data);
+
+    this.booking=this.service.getbusdetails().subscribe(data=>this.busdetails=data);
+
+
+    
+    
+    
+
   }
+
 
 }

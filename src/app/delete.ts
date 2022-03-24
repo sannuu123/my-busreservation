@@ -1,3 +1,3 @@
 export class Delete {
-    busId:string|undefined;
+    bid:string|undefined;
 }
