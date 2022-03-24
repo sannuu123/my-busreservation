@@ -28,9 +28,9 @@ export class BusdetailsComponent implements OnInit {
     this.lsFcity=localStorage.getItem('fcity');
     this.lsTcity=localStorage.getItem('tcity');
     this.lsDoj=localStorage.getItem('doj');
-    this.lsFcity='Mumbai';
-     this.lsTcity='Bangalore';
-     this.lsDoj='28MAR22';
+    // this.lsFcity='Mumbai';
+    //  this.lsTcity='Bangalore';
+    //  this.lsDoj='28MAR22';
     this.bks.getBusSearchDetails(this.lsFcity,this.lsTcity,this.lsDoj).subscribe(
       (data)=>{
           let dataArr:any=data;
